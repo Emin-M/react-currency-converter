@@ -27,17 +27,16 @@ const App = () => {
 
   useEffect(() => {
     getData(first, second);
-    show();
-  }, [first || second]);
+  }, [first, second]);
 
   useEffect(() => {
-    getData(first, second);
-  }, []);
+    show();
+  }, [rate]);
 
   return (
     <div className="App">
-      <h1>Currency Converter</h1>
-      <div className="head">{`1 ${first} = ${rate} ${second}`}</div>
+      <h1> Currency Converter </h1>
+      <div className="head"> {`1 ${first} = ${rate} ${second}`} </div>
       <div className="content">
         <li>
           <input
@@ -54,14 +53,14 @@ const App = () => {
               setFirst(e.target.value);
             }}
           >
-            <option value="RUB">Rubl</option>
-            <option value="AZN">Manat</option>
-            <option value="USD">Dollar</option>
-            <option value="EUR">Euro</option>
+            <option value="RUB"> Rubl </option>
+            <option value="AZN"> Manat </option>
+            <option value="USD"> Dollar </option>
+            <option value="EUR"> Euro </option>
           </select>
         </li>
         <li>
-          <p>to</p>
+          <p> to </p>
         </li>
         <li>
           <select
@@ -69,10 +68,10 @@ const App = () => {
               setSecond(e.target.value);
             }}
           >
-            <option value="AZN">Manat</option>
-            <option value="RUB">Rubl</option>
-            <option value="USD">Dollar</option>
-            <option value="EUR">Euro</option>
+            <option value="AZN"> Manat </option>
+            <option value="RUB"> Rubl </option>
+            <option value="USD"> Dollar </option>
+            <option value="EUR"> Euro </option>
           </select>
         </li>
         <li>
