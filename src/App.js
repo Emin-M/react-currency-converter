@@ -31,7 +31,7 @@ const App = () => {
 
   useEffect(() => {
     show();
-  }, [rate]);
+  }, [rate, val]);
 
   return (
     <div className="App">
@@ -73,15 +73,6 @@ const App = () => {
             <option value="USD"> Dollar </option>
             <option value="EUR"> Euro </option>
           </select>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              show();
-            }}
-          >
-            Convert
-          </button>
         </li>
         <li>
           <input type="text" value={converted + " " + second} />
