@@ -1,6 +1,18 @@
-body {
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+.App {
+    height: 100vh;
+    background: #c0392b;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e44ad, #c0392b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 h1 {
@@ -19,7 +31,9 @@ h1 {
     background-color: rgb(71, 163, 245);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     margin: 30px 40%;
+    margin-top: 30px !important;
     height: 100px;
+    border-radius: 5px;
 }
 
 .content {
